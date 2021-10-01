@@ -90,11 +90,10 @@ function buildCharts(sample) {
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures",
-      xaxis: { title: "values" },
-      yaxis: { title: "OTU"}
+   
     };
     // 10. Use Plotly to plot the data with the layout. 
-    Plotly.newPlot("Sidebar-plot", barData, barLayout);
+    Plotly.newPlot("bar", barData, barLayout);
     
   });
 }

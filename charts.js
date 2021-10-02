@@ -95,5 +95,29 @@ function buildCharts(sample) {
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar", trace, barLayout);
     
+    // 1. Create the trace for the bubble chart.
+    var bubbleData = [{
+     x: values,
+     y: ids,
+     text: labels,
+     mode: 'markers',
+     marker: {
+      color: values,
+      size: values,
+      autocolorscale: true
+    }
+    }];
+      
+  
+    // 2. Create the layout for the bubble chart.
+    var bubbleLayout = {
+      title: 'All Samples',
+      xaxis: {title:"OTU ID"},
+      automargin: true,
+      hovermode: "closest" 
+   };
+
+    // 3. Use Plotly to plot the data with the layout.
+    Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
   });
 }

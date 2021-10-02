@@ -1,5 +1,5 @@
-# plotlydiploy
-This exercise involved writing a JavaScript program to retrieve scientific sample data related to fictional study in which bacteria samples are collected from anonymous individuals. The object of this exercise is to display the results per individual in a webpage.
+# Improbable Beef
+This exercise involved writing a JavaScript and HTML programs to retrieve scientific sample data contained in  json file. The data is related to fictional study in which bacteria samples are collected from the navels anonymous individuals. The object of this exercise is to retrive and visualy represent the results by individual test participant in a webpage.
 
 https://serpaulus.github.io/plotlydiploy/  
 
